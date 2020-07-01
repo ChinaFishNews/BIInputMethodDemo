@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		734BDF5524ACAEDE007552A9 /* BIPlaceHolderFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 734BDF5424ACAEDE007552A9 /* BIPlaceHolderFile.m */; };
 		7388A2B424ACA76200B640DE /* BIKeyboardViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = 73DF1F3D24AC895C00DE7ED8 /* BIKeyboardViewController.h */; };
 		73DF1EDE24AC5FBD00DE7ED8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 73DF1EDD24AC5FBD00DE7ED8 /* AppDelegate.m */; };
 		73DF1EE124AC5FBD00DE7ED8 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 73DF1EE024AC5FBD00DE7ED8 /* SceneDelegate.m */; };
@@ -79,6 +80,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		734BDF5324ACAEDE007552A9 /* BIPlaceHolderFile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BIPlaceHolderFile.h; sourceTree = "<group>"; };
+		734BDF5424ACAEDE007552A9 /* BIPlaceHolderFile.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BIPlaceHolderFile.m; sourceTree = "<group>"; };
 		73DF1ED924AC5FBD00DE7ED8 /* BIInputMethodDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BIInputMethodDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		73DF1EDC24AC5FBD00DE7ED8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		73DF1EDD24AC5FBD00DE7ED8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -180,6 +183,8 @@
 			isa = PBXGroup;
 			children = (
 				73DF1F0F24AC602900DE7ED8 /* Info.plist */,
+				734BDF5324ACAEDE007552A9 /* BIPlaceHolderFile.h */,
+				734BDF5424ACAEDE007552A9 /* BIPlaceHolderFile.m */,
 				73DF1F3524AC88D200DE7ED8 /* lib */,
 			);
 			path = CustomKeyboard;
@@ -387,6 +392,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				734BDF5524ACAEDE007552A9 /* BIPlaceHolderFile.m in Sources */,
 				7388A2B424ACA76200B640DE /* BIKeyboardViewController.h in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -607,6 +613,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/CustomKeyboard/lib",
 				);
+				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_BUNDLE_IDENTIFIER = com.developer.baidu.BIInputMethodDemo.CustomKeyboard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -629,6 +636,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/CustomKeyboard/lib",
 				);
+				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_BUNDLE_IDENTIFIER = com.developer.baidu.BIInputMethodDemo.CustomKeyboard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
