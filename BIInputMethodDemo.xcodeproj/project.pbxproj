@@ -613,7 +613,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/CustomKeyboard/lib",
 				);
-				OTHER_LDFLAGS = "-all_load";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.developer.baidu.BIInputMethodDemo.CustomKeyboard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -636,7 +636,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/CustomKeyboard/lib",
 				);
-				OTHER_LDFLAGS = "-all_load";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.developer.baidu.BIInputMethodDemo.CustomKeyboard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
