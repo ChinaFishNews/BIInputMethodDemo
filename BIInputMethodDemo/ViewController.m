@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "BIEmojiShopController.h"
+#import "CommonUtil.h"
 
 @interface ViewController ()
 
@@ -16,8 +18,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+
+    [CommonUtil printLog];
 }
 
+- (IBAction)pushEmojiShop:(id)sender {
+    BIEmojiShopController *emojiShop = [[BIEmojiShopController alloc] init];
+    emojiShop.view.backgroundColor = [UIColor whiteColor];
+    [self.navigationController pushViewController:emojiShop animated:YES];
+}
 
 @end

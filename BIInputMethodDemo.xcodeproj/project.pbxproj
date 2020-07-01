@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7388A2B424ACA76200B640DE /* BIKeyboardViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = 73DF1F3D24AC895C00DE7ED8 /* BIKeyboardViewController.h */; };
 		73DF1EDE24AC5FBD00DE7ED8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 73DF1EDD24AC5FBD00DE7ED8 /* AppDelegate.m */; };
 		73DF1EE124AC5FBD00DE7ED8 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 73DF1EE024AC5FBD00DE7ED8 /* SceneDelegate.m */; };
 		73DF1EE424AC5FBD00DE7ED8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 73DF1EE324AC5FBD00DE7ED8 /* ViewController.m */; };
@@ -14,7 +15,68 @@
 		73DF1EE924AC5FC000DE7ED8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73DF1EE824AC5FC000DE7ED8 /* Assets.xcassets */; };
 		73DF1EEC24AC5FC000DE7ED8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73DF1EEA24AC5FC000DE7ED8 /* LaunchScreen.storyboard */; };
 		73DF1EEF24AC5FC000DE7ED8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 73DF1EEE24AC5FC000DE7ED8 /* main.m */; };
+		73DF1F1224AC602900DE7ED8 /* CustomKeyboard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 73DF1F0A24AC602900DE7ED8 /* CustomKeyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		73DF1F1F24AC604900DE7ED8 /* Common.h in Headers */ = {isa = PBXBuildFile; fileRef = 73DF1F1D24AC604900DE7ED8 /* Common.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		73DF1F2224AC604900DE7ED8 /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73DF1F1B24AC604900DE7ED8 /* Common.framework */; };
+		73DF1F2324AC604900DE7ED8 /* Common.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 73DF1F1B24AC604900DE7ED8 /* Common.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		73DF1F2F24AC6BFC00DE7ED8 /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73DF1F1B24AC604900DE7ED8 /* Common.framework */; };
+		73DF1F3724AC88F900DE7ED8 /* libBICommon.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 73DF1F3624AC88F900DE7ED8 /* libBICommon.a */; };
+		73DF1F3924AC890200DE7ED8 /* libBIExtension.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 73DF1F3824AC890200DE7ED8 /* libBIExtension.a */; };
+		73DF1F3B24AC891800DE7ED8 /* libBIContainer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 73DF1F3A24AC891800DE7ED8 /* libBIContainer.a */; };
+		73DF1F3F24AC897800DE7ED8 /* CommonUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 73DF1F3E24AC897800DE7ED8 /* CommonUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		73DF1F4324AC8DB500DE7ED8 /* CommonUtil.h in Sources */ = {isa = PBXBuildFile; fileRef = 73DF1F3E24AC897800DE7ED8 /* CommonUtil.h */; };
+		73DF1F4624AC8FD100DE7ED8 /* BIBaseView.h in Headers */ = {isa = PBXBuildFile; fileRef = 73DF1F4424AC8FD100DE7ED8 /* BIBaseView.h */; };
+		73DF1F4724AC8FD100DE7ED8 /* BIBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 73DF1F4524AC8FD100DE7ED8 /* BIBaseView.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		73DF1F1024AC602900DE7ED8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 73DF1ED124AC5FBD00DE7ED8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 73DF1F0924AC602900DE7ED8;
+			remoteInfo = CustomKeyboard;
+		};
+		73DF1F2024AC604900DE7ED8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 73DF1ED124AC5FBD00DE7ED8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 73DF1F1A24AC604900DE7ED8;
+			remoteInfo = Common;
+		};
+		73DF1F2C24AC6B9600DE7ED8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 73DF1ED124AC5FBD00DE7ED8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 73DF1F1A24AC604900DE7ED8;
+			remoteInfo = Common;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		73DF1F0524AC5FDE00DE7ED8 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				73DF1F1224AC602900DE7ED8 /* CustomKeyboard.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		73DF1F2724AC604900DE7ED8 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				73DF1F2324AC604900DE7ED8 /* Common.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		73DF1ED924AC5FBD00DE7ED8 /* BIInputMethodDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BIInputMethodDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -29,6 +91,19 @@
 		73DF1EEB24AC5FC000DE7ED8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		73DF1EED24AC5FC000DE7ED8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		73DF1EEE24AC5FC000DE7ED8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		73DF1F0A24AC602900DE7ED8 /* CustomKeyboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = CustomKeyboard.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		73DF1F0F24AC602900DE7ED8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		73DF1F1B24AC604900DE7ED8 /* Common.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Common.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		73DF1F1D24AC604900DE7ED8 /* Common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
+		73DF1F1E24AC604900DE7ED8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		73DF1F3624AC88F900DE7ED8 /* libBICommon.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libBICommon.a; sourceTree = "<group>"; };
+		73DF1F3824AC890200DE7ED8 /* libBIExtension.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libBIExtension.a; sourceTree = "<group>"; };
+		73DF1F3A24AC891800DE7ED8 /* libBIContainer.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libBIContainer.a; sourceTree = "<group>"; };
+		73DF1F3C24AC893C00DE7ED8 /* BIEmojiShopController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIEmojiShopController.h; sourceTree = "<group>"; };
+		73DF1F3D24AC895C00DE7ED8 /* BIKeyboardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIKeyboardViewController.h; sourceTree = "<group>"; };
+		73DF1F3E24AC897800DE7ED8 /* CommonUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonUtil.h; sourceTree = "<group>"; };
+		73DF1F4424AC8FD100DE7ED8 /* BIBaseView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BIBaseView.h; sourceTree = "<group>"; };
+		73DF1F4524AC8FD100DE7ED8 /* BIBaseView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BIBaseView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +111,25 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73DF1F3B24AC891800DE7ED8 /* libBIContainer.a in Frameworks */,
+				73DF1F2224AC604900DE7ED8 /* Common.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		73DF1F0724AC602900DE7ED8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				73DF1F3924AC890200DE7ED8 /* libBIExtension.a in Frameworks */,
+				73DF1F2F24AC6BFC00DE7ED8 /* Common.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		73DF1F1824AC604900DE7ED8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				73DF1F3724AC88F900DE7ED8 /* libBICommon.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,7 +140,10 @@
 			isa = PBXGroup;
 			children = (
 				73DF1EDB24AC5FBD00DE7ED8 /* BIInputMethodDemo */,
+				73DF1F0B24AC602900DE7ED8 /* CustomKeyboard */,
+				73DF1F1C24AC604900DE7ED8 /* Common */,
 				73DF1EDA24AC5FBD00DE7ED8 /* Products */,
+				73DF1F2E24AC6BFC00DE7ED8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +151,8 @@
 			isa = PBXGroup;
 			children = (
 				73DF1ED924AC5FBD00DE7ED8 /* BIInputMethodDemo.app */,
+				73DF1F0A24AC602900DE7ED8 /* CustomKeyboard.appex */,
+				73DF1F1B24AC604900DE7ED8 /* Common.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -61,6 +160,7 @@
 		73DF1EDB24AC5FBD00DE7ED8 /* BIInputMethodDemo */ = {
 			isa = PBXGroup;
 			children = (
+				73DF1F3424AC88C400DE7ED8 /* lib */,
 				73DF1EDC24AC5FBD00DE7ED8 /* AppDelegate.h */,
 				73DF1EDD24AC5FBD00DE7ED8 /* AppDelegate.m */,
 				73DF1EDF24AC5FBD00DE7ED8 /* SceneDelegate.h */,
@@ -76,7 +176,75 @@
 			path = BIInputMethodDemo;
 			sourceTree = "<group>";
 		};
+		73DF1F0B24AC602900DE7ED8 /* CustomKeyboard */ = {
+			isa = PBXGroup;
+			children = (
+				73DF1F0F24AC602900DE7ED8 /* Info.plist */,
+				73DF1F3524AC88D200DE7ED8 /* lib */,
+			);
+			path = CustomKeyboard;
+			sourceTree = "<group>";
+		};
+		73DF1F1C24AC604900DE7ED8 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				73DF1F1D24AC604900DE7ED8 /* Common.h */,
+				73DF1F4424AC8FD100DE7ED8 /* BIBaseView.h */,
+				73DF1F4524AC8FD100DE7ED8 /* BIBaseView.m */,
+				73DF1F1E24AC604900DE7ED8 /* Info.plist */,
+				73DF1F3324AC86FC00DE7ED8 /* lib */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		73DF1F2E24AC6BFC00DE7ED8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		73DF1F3324AC86FC00DE7ED8 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				73DF1F3E24AC897800DE7ED8 /* CommonUtil.h */,
+				73DF1F3624AC88F900DE7ED8 /* libBICommon.a */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		73DF1F3424AC88C400DE7ED8 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				73DF1F3C24AC893C00DE7ED8 /* BIEmojiShopController.h */,
+				73DF1F3A24AC891800DE7ED8 /* libBIContainer.a */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		73DF1F3524AC88D200DE7ED8 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				73DF1F3824AC890200DE7ED8 /* libBIExtension.a */,
+				73DF1F3D24AC895C00DE7ED8 /* BIKeyboardViewController.h */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		73DF1F1624AC604900DE7ED8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				73DF1F4624AC8FD100DE7ED8 /* BIBaseView.h in Headers */,
+				73DF1F1F24AC604900DE7ED8 /* Common.h in Headers */,
+				73DF1F3F24AC897800DE7ED8 /* CommonUtil.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		73DF1ED824AC5FBD00DE7ED8 /* BIInputMethodDemo */ = {
@@ -86,15 +254,55 @@
 				73DF1ED524AC5FBD00DE7ED8 /* Sources */,
 				73DF1ED624AC5FBD00DE7ED8 /* Frameworks */,
 				73DF1ED724AC5FBD00DE7ED8 /* Resources */,
+				73DF1F0524AC5FDE00DE7ED8 /* Embed App Extensions */,
+				73DF1F2724AC604900DE7ED8 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				73DF1F1124AC602900DE7ED8 /* PBXTargetDependency */,
+				73DF1F2124AC604900DE7ED8 /* PBXTargetDependency */,
 			);
 			name = BIInputMethodDemo;
 			productName = BIInputMethodDemo;
 			productReference = 73DF1ED924AC5FBD00DE7ED8 /* BIInputMethodDemo.app */;
 			productType = "com.apple.product-type.application";
+		};
+		73DF1F0924AC602900DE7ED8 /* CustomKeyboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 73DF1F1324AC602900DE7ED8 /* Build configuration list for PBXNativeTarget "CustomKeyboard" */;
+			buildPhases = (
+				73DF1F0624AC602900DE7ED8 /* Sources */,
+				73DF1F0724AC602900DE7ED8 /* Frameworks */,
+				73DF1F0824AC602900DE7ED8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				73DF1F2D24AC6B9600DE7ED8 /* PBXTargetDependency */,
+			);
+			name = CustomKeyboard;
+			productName = CustomKeyboard;
+			productReference = 73DF1F0A24AC602900DE7ED8 /* CustomKeyboard.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		73DF1F1A24AC604900DE7ED8 /* Common */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 73DF1F2424AC604900DE7ED8 /* Build configuration list for PBXNativeTarget "Common" */;
+			buildPhases = (
+				73DF1F1624AC604900DE7ED8 /* Headers */,
+				73DF1F1724AC604900DE7ED8 /* Sources */,
+				73DF1F1824AC604900DE7ED8 /* Frameworks */,
+				73DF1F1924AC604900DE7ED8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Common;
+			productName = Common;
+			productReference = 73DF1F1B24AC604900DE7ED8 /* Common.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -106,6 +314,12 @@
 				ORGANIZATIONNAME = baidu;
 				TargetAttributes = {
 					73DF1ED824AC5FBD00DE7ED8 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					73DF1F0924AC602900DE7ED8 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					73DF1F1A24AC604900DE7ED8 = {
 						CreatedOnToolsVersion = 11.5;
 					};
 				};
@@ -124,6 +338,8 @@
 			projectRoot = "";
 			targets = (
 				73DF1ED824AC5FBD00DE7ED8 /* BIInputMethodDemo */,
+				73DF1F0924AC602900DE7ED8 /* CustomKeyboard */,
+				73DF1F1A24AC604900DE7ED8 /* Common */,
 			);
 		};
 /* End PBXProject section */
@@ -136,6 +352,20 @@
 				73DF1EEC24AC5FC000DE7ED8 /* LaunchScreen.storyboard in Resources */,
 				73DF1EE924AC5FC000DE7ED8 /* Assets.xcassets in Resources */,
 				73DF1EE724AC5FBD00DE7ED8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		73DF1F0824AC602900DE7ED8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		73DF1F1924AC604900DE7ED8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,7 +383,42 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		73DF1F0624AC602900DE7ED8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7388A2B424ACA76200B640DE /* BIKeyboardViewController.h in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		73DF1F1724AC604900DE7ED8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				73DF1F4724AC8FD100DE7ED8 /* BIBaseView.m in Sources */,
+				73DF1F4324AC8DB500DE7ED8 /* CommonUtil.h in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		73DF1F1124AC602900DE7ED8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 73DF1F0924AC602900DE7ED8 /* CustomKeyboard */;
+			targetProxy = 73DF1F1024AC602900DE7ED8 /* PBXContainerItemProxy */;
+		};
+		73DF1F2124AC604900DE7ED8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 73DF1F1A24AC604900DE7ED8 /* Common */;
+			targetProxy = 73DF1F2024AC604900DE7ED8 /* PBXContainerItemProxy */;
+		};
+		73DF1F2D24AC6B9600DE7ED8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 73DF1F1A24AC604900DE7ED8 /* Common */;
+			targetProxy = 73DF1F2C24AC6B9600DE7ED8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		73DF1EE524AC5FBD00DE7ED8 /* Main.storyboard */ = {
@@ -225,7 +490,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -277,7 +542,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -296,6 +561,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/BIInputMethodDemo/lib",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.developer.baidu.BIInputMethodDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -313,9 +582,117 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/BIInputMethodDemo/lib",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.developer.baidu.BIInputMethodDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		73DF1F1424AC602900DE7ED8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2TV8FB59SP;
+				INFOPLIST_FILE = CustomKeyboard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CustomKeyboard/lib",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.developer.baidu.BIInputMethodDemo.CustomKeyboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		73DF1F1524AC602900DE7ED8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2TV8FB59SP;
+				INFOPLIST_FILE = CustomKeyboard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CustomKeyboard/lib",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.developer.baidu.BIInputMethodDemo.CustomKeyboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		73DF1F2524AC604900DE7ED8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 2TV8FB59SP;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Common/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Common/lib",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.developer.baidu.Common;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		73DF1F2624AC604900DE7ED8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 2TV8FB59SP;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Common/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Common/lib",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.developer.baidu.Common;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -336,6 +713,24 @@
 			buildConfigurations = (
 				73DF1EF324AC5FC000DE7ED8 /* Debug */,
 				73DF1EF424AC5FC000DE7ED8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		73DF1F1324AC602900DE7ED8 /* Build configuration list for PBXNativeTarget "CustomKeyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				73DF1F1424AC602900DE7ED8 /* Debug */,
+				73DF1F1524AC602900DE7ED8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		73DF1F2424AC604900DE7ED8 /* Build configuration list for PBXNativeTarget "Common" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				73DF1F2524AC604900DE7ED8 /* Debug */,
+				73DF1F2624AC604900DE7ED8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
